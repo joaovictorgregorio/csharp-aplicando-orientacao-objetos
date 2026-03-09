@@ -1,4 +1,4 @@
-﻿namespace BankAccountAndCar
+﻿namespace ChallengeOne
 {
     class Car
     {
