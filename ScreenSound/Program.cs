@@ -2,9 +2,18 @@
 
 Console.Clear();
 
-Music music1 = new Music();
-music1.Name  = "Roxane";
-music1.Artistic = "The Police";
-music1.Duration = 273;
-music1.Available = true;
-music1.ViewTechnicalSpecifications();
+Album queenAlbum  = new Album();
+queenAlbum.Name = "A night at the opera";
+
+Music musicOne = new Music();
+musicOne.Name = "Love of my life";
+musicOne.Duration = 213;
+
+Music musicTwo = new Music();
+musicTwo.Name = "Bohemian Rhapsody";
+musicTwo.Duration = 354;
+
+queenAlbum.AddMusic(musicOne);
+queenAlbum.AddMusic(musicTwo);
+
+queenAlbum.ShowAlbumSongs();
