@@ -1,4 +1,4 @@
-﻿using ChallengeTwo;
+﻿using Challenge_2;
 
 Console.Clear();
 

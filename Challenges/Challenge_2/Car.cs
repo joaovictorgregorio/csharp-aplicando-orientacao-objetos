@@ -1,4 +1,4 @@
-﻿namespace ChallengeTwo
+﻿namespace Challenge_2
 {
     class Car
     {
