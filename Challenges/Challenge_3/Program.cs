@@ -2,7 +2,7 @@
 
 Console.Clear();
 
-/* TÓPICOS 1 e 2 DO DESAFIO
+// TÓPICOS 1 e 2 DO DESAFIO
 
 BankAccount bankAccount = new BankAccount();
 bankAccount.Holder = new Holder { Name = "João Victor" };
@@ -11,11 +11,9 @@ bankAccount.AccountNumber = "654343-4";
 bankAccount.Balance = 450;
 bankAccount.Limit = 52000;
 
-bankAccount.ShowAccountInformation(); 
-*/
+bankAccount.ShowAccountInformation();
 
-
-/* TÓPICO 3 DO DESAFIO
+// TÓPICO 3 DO DESAFIO
 
 var inventory = new ProductInventory();
 
@@ -42,5 +40,4 @@ var mouse = new ProductInventory
 inventory.AddProduct(keyboard);
 inventory.AddProduct(mouse);
 inventory.DisplayProducts();
-*/
 

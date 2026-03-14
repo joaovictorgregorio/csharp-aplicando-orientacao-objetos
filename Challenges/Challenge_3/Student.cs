@@ -6,6 +6,6 @@ namespace Challenge_3
     {
         public string? Name { get; set; }
         public int Age { get; set; }
-        public List<double> Grades { get; set; }
+        public List<double>? Grades { get; set; }
     }
 }
