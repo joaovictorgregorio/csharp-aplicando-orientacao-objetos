@@ -6,8 +6,12 @@
         public string? Name { get; set; }
         public int TotalDuration => _songs.Sum(m => m.Duration);
 
+        #region ADD MUSIC
         public void AddMusic(Music music) => _songs.Add(music);
 
+        #endregion ADD MUSIC
+
+        #region SHOW ALBUM SONGS
         public void ShowAlbumSongs()
         {
             Console.WriteLine($" Lista de músicas do álbum {Name}: \n");
@@ -19,5 +23,6 @@
 
             Console.WriteLine($"\n Para ouvir este álbum completo é necessário: {TotalDuration} segundos");
         }
+        #endregion SHOW ALBUM SONGS
     }
 }

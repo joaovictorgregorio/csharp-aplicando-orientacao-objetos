@@ -7,7 +7,7 @@
         public int Duration { get; set; }
         public bool Available { get; set; }
         public string? BriefDescription => $"A música {Name} pertence à banda {Artistic}";
-
+        public Genre? Genre { get; set; }
 
         #region VIEW TECHNICAL SPECIFICATIONS
         public void ViewTechnicalSpecifications()
