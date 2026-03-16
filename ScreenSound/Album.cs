@@ -3,7 +3,13 @@
     class Album
     {
         private List<Music> _songs = [];
-        public string? Name { get; set; }
+
+        #region CONSTRUCTOR
+        public Album(string? albumName) => AlbumName = albumName;
+
+        #endregion CONSTRUCTOR
+
+        public string? AlbumName { get; }
         public int TotalDuration => _songs.Sum(m => m.Duration);
 
         #region ADD MUSIC
@@ -14,11 +20,11 @@
         #region SHOW ALBUM SONGS
         public void ShowAlbumSongs()
         {
-            Console.WriteLine($" Lista de músicas do álbum {Name}: \n");
+            ScreenFormatter.Section($"Lista de músicas do álbum {AlbumName}", ConsoleColor.Yellow);
 
             foreach (var music in _songs)
             {
-                Console.WriteLine($"  Música: {music.Name}");
+                Console.WriteLine($"  Música: {music.MusicName}");
             }
 
             Console.WriteLine($"\n Para ouvir este álbum completo é necessário: {TotalDuration} segundos");

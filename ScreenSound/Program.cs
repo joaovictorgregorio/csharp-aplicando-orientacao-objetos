@@ -2,18 +2,27 @@
 
 Console.Clear();
 
-Album queenAlbum  = new Album();
-queenAlbum.Name = "A night at the opera";
+Band queen = new Band("Queen");
 
-Music musicOne = new Music();
-musicOne.Name = "Love of my life";
-musicOne.Duration = 213;
+Album queenAlbum  = new Album("A night at the opera");
 
-Music musicTwo = new Music();
-musicTwo.Name = "Bohemian Rhapsody";
-musicTwo.Duration = 354;
+Music musicOne = new Music("Love of my life", queen)
+{
+    Duration = 213,
+    Available = true,
+};
+
+Music musicTwo = new Music("Bohemian Rhapsody", queen)
+{
+    Duration = 354,
+    Available = false,
+};
 
 queenAlbum.AddMusic(musicOne);
 queenAlbum.AddMusic(musicTwo);
+queen.AddAlbum(queenAlbum);
 
 queenAlbum.ShowAlbumSongs();
+musicOne.ViewTechnicalSpecifications();
+musicTwo.ViewTechnicalSpecifications();
+queen.ViewDiscography();
